@@ -106,33 +106,61 @@ Chcemy wspierać małe i lokalne przedsiębiorstwa. Dzięki temu rozwój miasta 
 </body>
 </html>
 
-a.button {
-    background-color: #007bff;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
+<style>
+    /* 1. Body z gradientem */
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(to right, #4facfe, #00f2fe);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
 
-a.button:hover {
-    background-color: #0056b3;
-}
+    /* 2. Box z cieniem i zaokrągleniami */
+    .container {
+        max-width: 800px;
+        background: white;
+        margin: 50px;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        text-align: center;
+    }
 
-img.logo {
-    width: 200px;
-    margin-bottom: 30px;
-    transition: transform 0.5s;
-}
+    /* 3. Logo z animacją powiększania */
+    img.logo {
+        width: 200px;
+        margin-bottom: 30px;
+        transition: transform 0.5s;
+    }
 
-img.logo:hover {
-    transform: scale(1.1);
-}
+    img.logo:hover {
+        transform: scale(1.1);
+    }
 
-.container {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
+    /* 4. Tekst */
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: left;
+        color: #333;
+    }
 
+    /* 5. Przycisk z efektem hover */
+    a.button {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 15px 30px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+    }
+
+    a.button:hover {
+        background-color: #0056b3;
+    }
+</style>
