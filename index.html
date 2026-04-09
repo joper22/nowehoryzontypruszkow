@@ -13,6 +13,18 @@
             justify-content: center;
         }
 
+        /* POCHYLONY TEKST W LEWYM GÓRNYM ROGU */
+        .representatives {
+            position: fixed;
+            top: 20px;
+            left: 10px;
+            transform: rotate(-15deg);
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            z-index: 1000;
+        }
+
         /* BANERY PO BOKACH Z NACHYLENIEM I KOŁYSANIEM */
         .side-banner {
             position: fixed;
@@ -75,13 +87,20 @@
 
         img.logo {
             display: block;
-            margin: 0 auto 30px auto;
+            margin: 0 auto 20px auto;
             width: 200px;
             transition: transform 0.5s;
         }
 
         img.logo:hover {
             transform: scale(1.1);
+        }
+
+        .intro-text {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 40px;
+            line-height: 1.6;
         }
 
         p {
@@ -101,9 +120,17 @@
             margin-top: 20px;
             margin-bottom: 10px;
         }
+
     </style>
 </head>
 <body>
+
+    <!-- POCHYLONY TEKST W LEWYM GÓRNYM ROGU -->
+    <div class="representatives">
+        przedstawiciele:<br>
+        Marko Bahdasarov<br>
+        Alan Gorski
+    </div>
 
     <!-- BANERY PO BOKACH -->
     <div class="side-banner left">
@@ -119,6 +146,11 @@
     <!-- GŁÓWNY KONTAINER -->
     <div class="container">
         <img src="logo.jpg" alt="Logo" class="logo">
+
+        <!-- TEKST POD LOGO -->
+        <div class="intro-text">
+            "Nowe Horyzonty” to lokalna, fikcyjna inicjatywa polityczna działająca w Pruszkowie, której celem jest rozwój miasta poprzez nowoczesne technologie, edukację, ekologię oraz aktywne zaangażowanie mieszkańców. Partia stawia na cyfryzację usług publicznych, wspieranie młodzieży, rozbudowę zielonych przestrzeni, poprawę infrastruktury oraz budowanie silnej, zintegrowanej społeczności opartej na lokalnych wartościach i przejrzystości władzy.
+        </div>
 
         <h2>💻 Cyfrowe Miasto</h2>
         <h3>Urząd online</h3>
