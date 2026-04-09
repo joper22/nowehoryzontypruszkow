@@ -2,10 +2,14 @@
 <html>
 <head>
     <title>Nowe Horyzonty Pruszków</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
             margin: 0;
             padding: 0;
             display: flex;
@@ -13,39 +17,42 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             background: white;
             margin: 50px;
             padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: left;
         }
 
         img.logo {
+            display: block;
+            margin: 0 auto 30px auto;
             width: 200px;
-            margin-bottom: 30px;
+            transition: transform 0.5s;
+        }
+
+        img.logo:hover {
+            transform: scale(1.1);
         }
 
         p {
             font-size: 18px;
             line-height: 1.6;
-            text-align: left;
+            color: #333;
+            margin-bottom: 20px;
         }
 
-        a.button {
-            display: inline-block;
-            margin-top: 40px;
-            padding: 15px 30px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 10px;
+        h2 {
+            color: #007bff;
+            margin-top: 30px;
+            margin-bottom: 15px;
         }
 
-        a.button:hover {
-            background-color: #0056b3;
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -56,111 +63,66 @@
     <!-- LOGO -->
     <img src="logo.jpg" alt="Logo" class="logo">
 
-    <!-- DŁUGI TEKST -->
-    <p>
-💻 Cyfrowe Miasto
-Urząd online
-Chcemy, aby większość spraw urzędowych można było załatwić przez internet. To pozwoli zaoszczędzić czas i ułatwi kontakt z urzędem.
-Aplikacja miejska
-Planujemy stworzyć aplikację do zgłaszania problemów i kontaktu z miastem. Ułatwi ona mieszkańcom dostęp do informacji i usług.
-Darmowe Wi-Fi
-Chcemy zapewnić darmowy internet w parkach i centrum miasta. To zwiększy komfort mieszkańców i nowoczesność przestrzeni publicznej.
-Przejrzystość władzy
-Stawiamy na większy dostęp do informacji o działaniach władz. Chcemy wprowadzić transmisje i publikację decyzji online.
-🎓 Młodzież i Edukacja
-Nowoczesne szkoły
-Chcemy inwestować w nowoczesne wyposażenie szkół. Dzięki temu uczniowie będą mieli lepsze warunki do nauki.
-Programowanie i technologia
-Wspieramy naukę programowania i nowych technologii. To przygotuje młodych ludzi do przyszłości.
-Budżet młodzieżowy
-Chcemy wprowadzić budżet dla młodzieży. Pozwoli to młodym mieszkańcom mieć wpływ na miasto.
-🌳 Zielone Miasto
-Więcej zieleni
-Planujemy sadzić więcej drzew i roślin. Dzięki temu miasto będzie zdrowsze i ładniejsze.
-Czyste powietrze
-Chcemy wprowadzać rozwiązania poprawiające jakość powietrza. To ważne dla zdrowia mieszkańców.
-Nowe place zabaw i parki
-Planujemy budowę i modernizację miejsc do odpoczynku. Dzięki temu mieszkańcy będą mieli więcej przestrzeni do spędzania czasu.
-🚦 Transport i Infrastruktura
-Lepsze drogi
-Chcemy remontować i modernizować drogi. Poprawi to bezpieczeństwo i komfort jazdy.
-Więcej ścieżek rowerowych
-Planujemy rozwój ścieżek rowerowych. To bezpieczna i ekologiczna forma transportu.
-Inteligentna sygnalizacja
-Chcemy wprowadzić nowoczesne sterowanie światłami. Dzięki temu ruch będzie płynniejszy, a korki mniejsze.
-Mark
-🏛 Tradycja i Społeczność
-Wsparcie lokalnych wydarzeń
-Chcemy wspierać festyny, wydarzenia i inicjatywy mieszkańców. Dzięki temu będziemy budować silną i zintegrowaną społeczność.
-Ochrona historii miasta
-Planujemy dbać o zabytki i lokalne dziedzictwo. Chcemy także promować historię miasta w nowoczesny sposób.
-Pomoc dla lokalnych firm
-Chcemy wspierać małe i lokalne przedsiębiorstwa. Dzięki temu rozwój miasta będzie oparty na lokalnej gospodarce.
-    </p>
+    <!-- TEKST -->
+    <h2>💻 Cyfrowe Miasto</h2>
 
-    <!-- LINK DO PREZENTACJI -->
- <a href="prezentacja.pffx" class="button">📄 Zobacz prezentację</a>
+    <h3>Urząd online</h3>
+    <p>Chcemy, aby większość spraw urzędowych można było załatwić przez internet. To pozwoli zaoszczędzić czas i ułatwi kontakt z urzędem.</p>
+
+    <h3>Aplikacja miejska</h3>
+    <p>Planujemy stworzyć aplikację do zgłaszania problemów i kontaktu z miastem. Ułatwi ona mieszkańcom dostęp do informacji i usług.</p>
+
+    <h3>Darmowe Wi-Fi</h3>
+    <p>Chcemy zapewnić darmowy internet w parkach i centrum miasta. To zwiększy komfort mieszkańców i nowoczesność przestrzeni publicznej.</p>
+
+    <h3>Przejrzystość władzy</h3>
+    <p>Stawiamy na większy dostęp do informacji o działaniach władz. Chcemy wprowadzić transmisje i publikację decyzji online.</p>
+
+    <h2>🎓 Młodzież i Edukacja</h2>
+
+    <h3>Nowoczesne szkoły</h3>
+    <p>Chcemy inwestować w nowoczesne wyposażenie szkół. Dzięki temu uczniowie będą mieli lepsze warunki do nauki.</p>
+
+    <h3>Programowanie i technologia</h3>
+    <p>Wspieramy naukę programowania i nowych technologii. To przygotuje młodych ludzi do przyszłości.</p>
+
+    <h3>Budżet młodzieżowy</h3>
+    <p>Chcemy wprowadzić budżet dla młodzieży. Pozwoli to młodym mieszkańcom mieć wpływ na miasto.</p>
+
+    <h2>🌳 Zielone Miasto</h2>
+
+    <h3>Więcej zieleni</h3>
+    <p>Planujemy sadzić więcej drzew i roślin. Dzięki temu miasto będzie zdrowsze i ładniejsze.</p>
+
+    <h3>Czyste powietrze</h3>
+    <p>Chcemy wprowadzać rozwiązania poprawiające jakość powietrza. To ważne dla zdrowia mieszkańców.</p>
+
+    <h3>Nowe place zabaw i parki</h3>
+    <p>Planujemy budowę i modernizację miejsc do odpoczynku. Dzięki temu mieszkańcy będą mieli więcej przestrzeni do spędzania czasu.</p>
+
+    <h2>🚦 Transport i Infrastruktura</h2>
+
+    <h3>Lepsze drogi</h3>
+    <p>Chcemy remontować i modernizować drogi. Poprawi to bezpieczeństwo i komfort jazdy.</p>
+
+    <h3>Więcej ścieżek rowerowych</h3>
+    <p>Planujemy rozwój ścieżek rowerowych. To bezpieczna i ekologiczna forma transportu.</p>
+
+    <h3>Inteligentna sygnalizacja</h3>
+    <p>Chcemy wprowadzić nowoczesne sterowanie światłami. Dzięki temu ruch będzie płynniejszy, a korki mniejsze.</p>
+
+    <h2>🏛 Tradycja i Społeczność</h2>
+
+    <h3>Wsparcie lokalnych wydarzeń</h3>
+    <p>Chcemy wspierać festyny, wydarzenia i inicjatywy mieszkańców. Dzięki temu będziemy budować silną i zintegrowaną społeczność.</p>
+
+    <h3>Ochrona historii miasta</h3>
+    <p>Planujemy dbać o zabytki i lokalne dziedzictwo. Chcemy także promować historię miasta w nowoczesny sposób.</p>
+
+    <h3>Pomoc dla lokalnych firm</h3>
+    <p>Chcemy wspierać małe i lokalne przedsiębiorstwa. Dzięki temu rozwój miasta będzie oparty na lokalnej gospodarce.</p>
 
 </div>
 
 </body>
 </html>
-
-<style>
-    /* 1. Body z gradientem */
-    body {
-        font-family: 'Roboto', sans-serif;
-        background: linear-gradient(to right, #4facfe, #00f2fe);
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    /* 2. Box z cieniem i zaokrągleniami */
-    .container {
-        max-width: 800px;
-        background: white;
-        margin: 50px;
-        padding: 40px;
-        border-radius: 20px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        text-align: center;
-    }
-
-    /* 3. Logo z animacją powiększania */
-    img.logo {
-        width: 200px;
-        margin-bottom: 30px;
-        transition: transform 0.5s;
-    }
-
-    img.logo:hover {
-        transform: scale(1.1);
-    }
-
-    /* 4. Tekst */
-    p {
-        font-size: 18px;
-        line-height: 1.6;
-        text-align: left;
-        color: #333;
-    }
-
-    /* 5. Przycisk z efektem hover */
-    a.button {
-        display: inline-block;
-        margin-top: 40px;
-        padding: 15px 30px;
-        background-color: #007bff;
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 10px;
-        transition: background-color 0.3s;
-    }
-
-    a.button:hover {
-        background-color: #0056b3;
-    }
-</style>
