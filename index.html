@@ -2,10 +2,7 @@
 <html>
 <head>
     <title>Nowe Horyzonty Pruszków</title>
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -16,6 +13,56 @@
             justify-content: center;
         }
 
+        /* BANERY PO BOKACH Z NACHYLENIEM I KOŁYSANIEM */
+        .side-banner {
+            position: fixed;
+            top: 50%;
+            background-color: #ff4757;
+            color: white;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .side-banner.left {
+            left: 0;
+            transform: translateY(-50%) rotate(-10deg);
+            animation: swing-left 2s infinite alternate;
+        }
+
+        .side-banner.right {
+            right: 0;
+            transform: translateY(-50%) rotate(10deg);
+            animation: swing-right 2s infinite alternate;
+        }
+
+        .side-banner .icon {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        @keyframes swing-left {
+            0% { transform: translateY(-50%) rotate(-10deg); }
+            50% { transform: translateY(-50%) rotate(-12deg); }
+            100% { transform: translateY(-50%) rotate(-10deg); }
+        }
+
+        @keyframes swing-right {
+            0% { transform: translateY(-50%) rotate(10deg); }
+            50% { transform: translateY(-50%) rotate(12deg); }
+            100% { transform: translateY(-50%) rotate(10deg); }
+        }
+
+        /* GŁÓWNY KONTAINER ZE STRONĄ */
         .container {
             max-width: 900px;
             background: white;
@@ -58,71 +105,75 @@
 </head>
 <body>
 
-<div class="container">
+    <!-- BANERY PO BOKACH -->
+    <div class="side-banner left">
+        <div class="icon">👍</div>
+        GŁOSUJ NA NAS
+    </div>
 
-    <!-- LOGO -->
-    <img src="logo.jpg" alt="Logo" class="logo">
+    <div class="side-banner right">
+        <div class="icon">👍</div>
+        GŁOSUJ NA NAS
+    </div>
 
-    <!-- TEKST -->
-    <h2>💻 Cyfrowe Miasto</h2>
+    <!-- GŁÓWNY KONTAINER -->
+    <div class="container">
+        <img src="logo.jpg" alt="Logo" class="logo">
 
-    <h3>Urząd online</h3>
-    <p>Chcemy, aby większość spraw urzędowych można było załatwić przez internet. To pozwoli zaoszczędzić czas i ułatwi kontakt z urzędem.</p>
+        <h2>💻 Cyfrowe Miasto</h2>
+        <h3>Urząd online</h3>
+        <p>Chcemy, aby większość spraw urzędowych można było załatwić przez internet. To pozwoli zaoszczędzić czas i ułatwi kontakt z urzędem.</p>
 
-    <h3>Aplikacja miejska</h3>
-    <p>Planujemy stworzyć aplikację do zgłaszania problemów i kontaktu z miastem. Ułatwi ona mieszkańcom dostęp do informacji i usług.</p>
+        <h3>Aplikacja miejska</h3>
+        <p>Planujemy stworzyć aplikację do zgłaszania problemów i kontaktu z miastem. Ułatwi ona mieszkańcom dostęp do informacji i usług.</p>
 
-    <h3>Darmowe Wi-Fi</h3>
-    <p>Chcemy zapewnić darmowy internet w parkach i centrum miasta. To zwiększy komfort mieszkańców i nowoczesność przestrzeni publicznej.</p>
+        <h3>Darmowe Wi-Fi</h3>
+        <p>Chcemy zapewnić darmowy internet w parkach i centrum miasta. To zwiększy komfort mieszkańców i nowoczesność przestrzeni publicznej.</p>
 
-    <h3>Przejrzystość władzy</h3>
-    <p>Stawiamy na większy dostęp do informacji o działaniach władz. Chcemy wprowadzić transmisje i publikację decyzji online.</p>
+        <h3>Przejrzystość władzy</h3>
+        <p>Stawiamy na większy dostęp do informacji o działaniach władz. Chcemy wprowadzić transmisje i publikację decyzji online.</p>
 
-    <h2>🎓 Młodzież i Edukacja</h2>
+        <h2>🎓 Młodzież i Edukacja</h2>
+        <h3>Nowoczesne szkoły</h3>
+        <p>Chcemy inwestować w nowoczesne wyposażenie szkół. Dzięki temu uczniowie będą mieli lepsze warunki do nauki.</p>
 
-    <h3>Nowoczesne szkoły</h3>
-    <p>Chcemy inwestować w nowoczesne wyposażenie szkół. Dzięki temu uczniowie będą mieli lepsze warunki do nauki.</p>
+        <h3>Programowanie i technologia</h3>
+        <p>Wspieramy naukę programowania i nowych technologii. To przygotuje młodych ludzi do przyszłości.</p>
 
-    <h3>Programowanie i technologia</h3>
-    <p>Wspieramy naukę programowania i nowych technologii. To przygotuje młodych ludzi do przyszłości.</p>
+        <h3>Budżet młodzieżowy</h3>
+        <p>Chcemy wprowadzić budżet dla młodzieży. Pozwoli to młodym mieszkańcom mieć wpływ na miasto.</p>
 
-    <h3>Budżet młodzieżowy</h3>
-    <p>Chcemy wprowadzić budżet dla młodzieży. Pozwoli to młodym mieszkańcom mieć wpływ na miasto.</p>
+        <h2>🌳 Zielone Miasto</h2>
+        <h3>Więcej zieleni</h3>
+        <p>Planujemy sadzić więcej drzew i roślin. Dzięki temu miasto będzie zdrowsze i ładniejsze.</p>
 
-    <h2>🌳 Zielone Miasto</h2>
+        <h3>Czyste powietrze</h3>
+        <p>Chcemy wprowadzać rozwiązania poprawiające jakość powietrza. To ważne dla zdrowia mieszkańców.</p>
 
-    <h3>Więcej zieleni</h3>
-    <p>Planujemy sadzić więcej drzew i roślin. Dzięki temu miasto będzie zdrowsze i ładniejsze.</p>
+        <h3>Nowe place zabaw i parki</h3>
+        <p>Planujemy budowę i modernizację miejsc do odpoczynku. Dzięki temu mieszkańcy będą mieli więcej przestrzeni do spędzania czasu.</p>
 
-    <h3>Czyste powietrze</h3>
-    <p>Chcemy wprowadzać rozwiązania poprawiające jakość powietrza. To ważne dla zdrowia mieszkańców.</p>
+        <h2>🚦 Transport i Infrastruktura</h2>
+        <h3>Lepsze drogi</h3>
+        <p>Chcemy remontować i modernizować drogi. Poprawi to bezpieczeństwo i komfort jazdy.</p>
 
-    <h3>Nowe place zabaw i parki</h3>
-    <p>Planujemy budowę i modernizację miejsc do odpoczynku. Dzięki temu mieszkańcy będą mieli więcej przestrzeni do spędzania czasu.</p>
+        <h3>Więcej ścieżek rowerowych</h3>
+        <p>Planujemy rozwój ścieżek rowerowych. To bezpieczna i ekologiczna forma transportu.</p>
 
-    <h2>🚦 Transport i Infrastruktura</h2>
+        <h3>Inteligentna sygnalizacja</h3>
+        <p>Chcemy wprowadzić nowoczesne sterowanie światłami. Dzięki temu ruch będzie płynniejszy, a korki mniejsze.</p>
 
-    <h3>Lepsze drogi</h3>
-    <p>Chcemy remontować i modernizować drogi. Poprawi to bezpieczeństwo i komfort jazdy.</p>
+        <h2>🏛 Tradycja i Społeczność</h2>
+        <h3>Wsparcie lokalnych wydarzeń</h3>
+        <p>Chcemy wspierać festyny, wydarzenia i inicjatywy mieszkańców. Dzięki temu będziemy budować silną i zintegrowaną społeczność.</p>
 
-    <h3>Więcej ścieżek rowerowych</h3>
-    <p>Planujemy rozwój ścieżek rowerowych. To bezpieczna i ekologiczna forma transportu.</p>
+        <h3>Ochrona historii miasta</h3>
+        <p>Planujemy dbać o zabytki i lokalne dziedzictwo. Chcemy także promować historię miasta w nowoczesny sposób.</p>
 
-    <h3>Inteligentna sygnalizacja</h3>
-    <p>Chcemy wprowadzić nowoczesne sterowanie światłami. Dzięki temu ruch będzie płynniejszy, a korki mniejsze.</p>
+        <h3>Pomoc dla lokalnych firm</h3>
+        <p>Chcemy wspierać małe i lokalne przedsiębiorstwa. Dzięki temu rozwój miasta będzie oparty na lokalnej gospodarce.</p>
 
-    <h2>🏛 Tradycja i Społeczność</h2>
-
-    <h3>Wsparcie lokalnych wydarzeń</h3>
-    <p>Chcemy wspierać festyny, wydarzenia i inicjatywy mieszkańców. Dzięki temu będziemy budować silną i zintegrowaną społeczność.</p>
-
-    <h3>Ochrona historii miasta</h3>
-    <p>Planujemy dbać o zabytki i lokalne dziedzictwo. Chcemy także promować historię miasta w nowoczesny sposób.</p>
-
-    <h3>Pomoc dla lokalnych firm</h3>
-    <p>Chcemy wspierać małe i lokalne przedsiębiorstwa. Dzięki temu rozwój miasta będzie oparty na lokalnej gospodarce.</p>
-
-</div>
+    </div>
 
 </body>
 </html>
